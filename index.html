@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Rent-to-own Properties || USA</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<style>
+		body {
+			font-family: 'Roboto',sans-serif;
+			font-size: 0.9rem;
+			color: #555;
+		}
+		#cover {
+			position: relative;
+		}
+		.first {
+			margin: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			text-align: center;
+		}
+		#f_display h5 {
+			color: #fff;
+		}
+		h3#learn, h3#top {
+			margin-top: 6%;
+			margin-bottom: 6%;
+		}
+		#flayer, #slayer {
+			margin-bottom: 10%;
+		}
+		#flayer a:hover, #slayer a:hover, h5, h3#top {
+			color: #317eac;
+		}
+		#flayer a, #slayer a, a.dropdown-item {
+			color: #2fa4e7;
+		}
+		a.dropdown-item:hover, nav {
+			background-color: #2fa4e7;
+			color: #fff;
+		}
+		.dropdown-menu {
+			border-radius: 0px;
+		}
+		a.font-weight-bold, a.nav-link {
+			color: #fff;
+		}
+		a.font-weight-bold:hover {
+			text-decoration: underline;
+			color: #fff;
+		}
+		nav a.navbar-brand {
+			margin-left: 5%;
+			margin-top: -1%;
+		}
+		ul.navbar-nav li.dropdown a.text-capitalize:hover {
+			display: inline-block;
+		}
+		.btn, .btn:hover {
+			border-radius: 0;
+			background-color: #2fa4e7;
+			outline: none;
+			color: #fff;
+		}
+		#l_div {
+			height: 140px;
+		}
+		input.form-control {
+			min-width: 300px;
+		}
+		@media screen and (max-width: 826px) {
+			.btn, input.form-control {
+				display: inline-block;
+				text-align: center;
+				margin: auto;
+			}
+		}
+		@media screen and (max-width: 576px){
+			h3 {
+				font-size: 1.65em;
+			}
+			.row, .justify-content-center {
+				text-align: center;
+			}
+			.col-sm-4, .col-sm {
+				margin-bottom: 5%;
+			}
+			ul.navbar-nav li.dropdown:hover {
+				background-color: #317eac;
+				margin: 0px;
+				padding: 0px;
+			}
+			ul.navbar-nav li.dropdown a.dropdown-item {
+				color: #fff;
+				border: 0px;
+			}
+			div.dropdown-menu {
+				font-size: 0.9rem;
+				background-color: #2fa4e7;
+				color: #fff;
+				border: none;
+			}
+		}
+		@media screen and (max-width: 500px) {
+			a.fl {
+				font-size: 0.75rem;
+			}
+			ul.navbar-nav li.dropdown:hover {
+				background-color: #317eac;
+				margin: 0px;
+				padding: 0px;
+			}
+			ul.navbar-nav li.dropdown a.dropdown-item {
+				color: #fff;
+				border: 0px;
+			}
+			div.dropdown-menu {
+				font-size: 0.9rem;
+				background-color: #2fa4e7;
+				color: #fff;
+				border: none;
+			}
+		}
+		@media screen and (max-width: 433px) {
+			ul.nav {
+				font-size: 0.85rem;
+				display: block;
+				width: auto;
+				text-align: center;
+				height: auto;
+				margin-bottom: 4%;
+			}
+			#l_div {
+				height: 100%;
+			}
+			ul.navbar-nav li.dropdown:hover {
+				background-color: #317eac;
+				margin: 0px;
+				padding: 0px;
+			}
+			ul.navbar-nav li.dropdown a.dropdown-item {
+				color: #fff;
+				border: 0px;
+			}
+			div.dropdown-menu {
+				font-size: 0.9rem;
+				background-color: #2fa4e7;
+				color: #fff;
+				border: none;
+			}
+		}
+		@media screen and (max-width: 320px) {
+			a img {
+				width: 200px;
+			}
+			input.form-control {
+				display: block;
+				margin-left: 2.5%;
+				max-width: 100%;
+			}
+			ul.navbar-nav li.dropdown:hover {
+				background-color: #317eac;
+				margin: 0px;
+				padding: 0px 0px;
+				border: none;
+			}
+			ul.navbar-nav li.dropdown a.dropdown-item {
+				color: #fff;
+				border: 0px;
+			}
+			div.dropdown-menu {
+				font-size: 0.89rem;
+				background-color: #2fa4e7;
+				color: #fff;
+				padding: 0px 1px;
+				border: 0px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<!-- Navigation Menu -->
+	<nav class="navbar navbar-expand-md navbar-dark">
+		<a href="index.html" class="navbar-brand">
+			<img src="logo.png" width="auto" height="33">
+		</a>
+		<button class="navbar-toggler" data-toggle="collapse" data-target="#down">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="down">
+			<ul class="navbar-nav">
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle text-capitalize" data-toggle="dropdown" href="javascript:void(0);" style="color: #fff;">Rent to own guide</a>
+					<div class="dropdown-menu">
+						<a href="javascript:void(0);" class="dropdown-item"><small>What is Rent to Own?</small></a>
+						<a href="javascript:void(0);" class="dropdown-item"><small>How does Rent to Own work?</small></a>
+						<a href="javascript:void(0);" class="dropdown-item"><small>Is Rent To Own For Me?</small></a>
+						<a href="javascript:void(0);" class="dropdown-item"><small>Do I need good credit to qualify for Rent to Own?</small></a>
+						<a href="javascript:void(0);" class="dropdown-item"><small>How do I find Rent to Own homes?</small></a>
+						<a href="javascript:void(0);" class="dropdown-item"><small>Once I find a Rent to Own home, what do I do?</small></a>
+						<a href="javascript:void(0);" class="dropdown-item"><small>Rent to Own Agreement</small></a>
+						<a href="javascript:void(0);" class="dropdown-item"><small>Rent to Own Homes</small></a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a href="javascript:void(0);" class="nav-link dropdown-toggle text-capitalize" data-toggle="dropdown"  style="color: #fff;">Rent to own homes</a>
+					<div class="dropdown-menu">
+						<a href="rent_2.html" class="dropdown-item"><small>Miami, FL Rent to Own Homes</small></a>
+						<a href="javascript:void(0);" class="dropdown-item"><small>San Diego, CA Rent to Own Homes</small></a>
+						<a href="javascript:void(0);" class="dropdown-item"><small>Colorado Springs, CO Rent to Own Homes</small></a>
+						<a href="rent_3.html" class="dropdown-item"><small>Rent to Own Homes by State</small></a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- Intro Section -->
+	<div class="container-fluid" style="height: 470px; background-image: url(image5.jpg);" id="cover">
+		<div class="row">
+			<div class="first">
+				<h2 class="text-capitalize text-light">Find rent to own homes</h2>
+				<h5 class="text-capitalize text-light">start owning your home today</h5>
+				<form>
+					<div class="input-group input-group-lg">
+						<input type="text" placeholder="Enter City, State or Zip" class="form-control mr-3 mt-2" style=" padding: 27px 20px; font-size: 1em; border-top-right-radius: 5px; border-bottom-right-radius: 5px;">
+						<button class="btn mt-2"><i class="fas fa-search"></i> Search</button>
+					</div>
+				</form>
+			</div>
+			
+		</div>
+	</div>
+
+	<!-- Body Section -->
+	<div class="container" id="flayer">
+		<h3 class="text-center" style="color: #317eac;" id="learn">Learn about rent to own. Make a <i>smart</i> decision</h3>
+		<div class="row mt-5 mb-5">
+			<div class="col-sm-4">
+				<h5><i class="fas fa-graduation-cap"></i> What is Rent to Own?</h5>
+				<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. <a href="javascript:void(0);">basics of Rent to Own</a>. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+			<div class="col-sm-4">
+				<h5><i class="fas fa-leaf"></i> Is Rent to own for me?</h5>
+				<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. <a href="javascript:void(0);">basics of Rent to Own</a>. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+			<div class="col-sm-4">
+				<h5><i class="fas fa-map-marker-alt"></i> How do i find Rent to own?</h5>
+				<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. <a href="javascript:void(0);">basics of Rent to Own</a>. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="container" id="slayer">
+		<h3 class="text-center text-capitalize" id="top">Top rent to own markets</h3>
+		<div class="row">
+			<div class="col-sm">
+				<h5>Top States</h5>
+				<a href="javasrcipt:void(0);">California Rent to Own</a><br>
+				<a href="javasrcipt:void(0);">Texas Rent to Own</a><br>
+				<a href="javasrcipt:void(0);">Florida Rent to Own</a><br>
+				<a href="javasrcipt:void(0);">Illinois Rent to Own</a><br>
+				<a href="javasrcipt:void(0);">Colorado Rent to Own</a><br>
+				<a href="javasrcipt:void(0);">Oklahoma Rent to Own</a><br>
+				<a href="javasrcipt:void(0);">North Carolina Rent to Own</a><br>
+				<a href="javasrcipt:void(0);">Georgia Rent to Own</a><br>
+				<div class="mt-2"></div>
+				<div><a href="javasrcipt:void(0);">more rent to own states</a></div>
+			</div>
+			<div class="col-sm">
+				<h5>Top Cities</h5>
+				<a href="javasrcipt:void(0);">San Diego, CA Rent to Own</a><br>
+				<a href="javasrcipt:void(0);">Colorado Springs, CA Rent to Own</a><br>
+				<a href="javasrcipt:void(0);">Miami, FL Rent to Own</a><br>
+				<a href="javasrcipt:void(0);">Jacksonville, FL Rent to Own</a><br>
+				<a href="javasrcipt:void(0);">Indianapolis, IN Rent to Own</a><br>
+				<a href="javasrcipt:void(0);">Chapel Hill, NC Rent to Own</a><br>
+				<a href="javasrcipt:void(0);">Okalahoma City, OK Rent to Own</a><br>
+				<a href="javasrcipt:void(0);">Vancouver, WA Rent to Own</a><br>
+				<div class="mt-2"></div>
+				<div><a href="javasrcipt:void(0);">more rent to own cities</a></div>
+			</div>
+			<div class="col-sm">
+				<h5>Top Countries</h5>
+				<a href="javasrcipt:void(0);">Riverside County, CA Rent to Own</a><br>
+				<a href="javasrcipt:void(0);">San Diego County, CA Rent to Own</a><br>
+				<a href="javasrcipt:void(0);">Miami Dade County, FL Rent to Own</a><br>
+				<a href="javasrcipt:void(0);">Cook County, IL Rent to Own</a><br>
+				<a href="javasrcipt:void(0);">Jackson County, MO Rent to Own</a><br>
+				<a href="javasrcipt:void(0);">Oklahoma County, OK Rent to Own</a><br>
+				<a href="javasrcipt:void(0);">Harris County, TX Rent to Own</a><br>
+				<a href="javasrcipt:void(0);">Clark County, WA Rent to Own</a><br>
+				<div class="mt-2"></div>
+				<div><a href="javasrcipt:void(0);">more rent to own countries</a></div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer Section -->
+	<div class="container-fluid" id="l_div" style="background-color: #2fa4e7;">
+		<div class="row justify-content-center">
+			<ul class="nav mt-3">
+				<li class="nav-item"><a href="javascript:void(0);" class="nav-link font-weight-bold fl">About Us</a></li>
+				<li class="nav-item"><a href="javascript:void(0);" class="nav-link font-weight-bold fl">Rent to own Guide</a></li>
+				<li class="nav-item"><a href="javascript:void(0);" class="nav-link font-weight-bold fl">Privacy Policy</a></li>
+				<li class="nav-item"><a href="javascript:void(0);" class="nav-link font-weight-bold fl">Contact Us</a></li>
+			</ul>
+		</div>
+		<p class="text-center text-light">Copyright &copy; 2019 RentToOwn.cc</p>
+	</div>
+</body>
+</html>
